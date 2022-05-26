@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="imgs/Brotherhood montajes electricos.ico">
+    <title>Montajes electricos</title>
+    <script src="https://kit.fontawesome.com/9805e8aed8.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="contenedor-logo">
+            <a href="index.html">
+                <img src="imgs/Brotherhood.ico" alt="logo de la empresa" class="logo-img">
+            </div>
+            </a>
+            <nav>
+                <a href="index.html" class="nav-link">Inicio</a>
+                <br>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+                <br>
+                <a href="donde estamos.html" class="nav-link"">Donde estamos</a>
+            </nav>  
+         </div>
+    </header>
+
+<body>
+    <main id="cont">
+        <div>
+            <h1><i class="fa-solid fa-address-book"></i> Contacto</h1>
+            <h3>Complete el siguiente formulario para contactarse con nosotros. Responderemos su mensaje a la brevedad.</h3>
+            <form action="" class="formulario" id="formulario">
+                <!--Grupo nombre-->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre</label>
+                    <div class="fomulario__grupo-input">
+                        <input type="text" class="formulario__input" id="nombre" name="nombre" placeholder="Ej:Gabriel" required>
+                    </div>
+                </div>
+                <!--Grupo apellido-->
+                <div class="formulario__grupo" id="grupo__apellido">
+                    <label for="apellido" class="formulario__label">Apellido</label>
+                    <div class="fomulario__grupo-input">
+                        <input type="text" class="formulario__input" id="apellido" name="apellido" placeholder="Ej:Paolisso" required>
+                    </div>
+                </div>
+                <!--Grupo empresa-->
+                <div class="formulario__grupo" id="grupo__empresa">
+                    <label for="empresa" class="formulario__label">Empresa</label>
+                    <div class="fomulario__grupo-input">
+                        <input type="text" class="formulario__input" id="empresa" name="empresa" placeholder="Ej:Edenor">
+                    </div>
+                </div>
+                <!--Grupo email-->
+                <div class="formulario__grupo" id="grupo__email">
+                    <label for="email" class="formulario__label">Email</label>
+                    <div class="fomulario__grupo-input">
+                        <input type="email" class="formulario__input" id="email" name="email" placeholder="Ej:Correo@correo.com" required>
+                    </div>
+                </div>
+                <!--Grupo celular-->
+                <div class="formulario__grupo" id="grupo__celular">
+                    <label for="celular" class="formulario__label">Celular</label>
+                    <div class="fomulario__grupo-input">
+                        <input type="number" class="formulario__input" id="celular" maxlength="10" name="celular"
+                            placeholder="Ej:1126755201" required>
+                    </div>
+                </div>
+                <!--Grupo preferencia contacto-->
+                <div class="formulario__grupo" id="grupo__preferencia-contacto">
+                    <label for="empresa" class="formulario__label">Preferencia</label>
+                    <div class="whsp-email">
+                    <input type="radio" name="rb1">
+                    <label for="Contacto">Whatsapp</label>
+                    <br>
+                    <input type="radio" name="rb2">
+                    <label for="Contacto">Email</label>
+                </div>
+               
+                <div class="fomulario__grupo-input"></div>
+            </div>
+
+                
+
+                <div class="formulario__grupo-consulta" id="consulta">
+                    <label for="formulario__label">Dejenos su consulta:</label>
+                    <br>
+                    <textarea name="Descripcion" id="" cols="103px" rows="10px" placeholder="Escriba su mensaje aqui..."
+                        required></textarea>
+                </div>
+                <div class="formulario__grupo formulario__grupo-boton-enviar">
+                    <input type="submit" onClick="return enviarFormulario();" class="formulario__boton" value="Enviar consulta">
+                </div>
+                
+            </form>
+            <div id="error"></div>
+            <script src="js/script.js"></script>
+        </div>
+    
+    </main>
+    <footer class="pie-pagina">
+        <div class="container">
+            <div class="box">
+                <figure>
+                    <a href="https://es.wikipedia.org/wiki/ISO_9001" target="blank"><img src="imgs/iso-9001.png"
+                            alt="Certificado iso 9001 "></a>
+                </figure>
+            </div>
+            <div class="box">
+                <div class="redes-sociales">
+                    <a href=" https://wa.me/5401126755201" target="blank" title="Whatsapp"><i class=""><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/brotherhoodtools/" target="blank" title="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/gabyto.paolisso/" target="blank" title="Facebook"><i
+                            class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; <b>Brotherhood</b> 2022.Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
