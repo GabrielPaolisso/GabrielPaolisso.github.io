@@ -1,7 +1,6 @@
 var nombre = document.getElementById('nombre');
 var apellido = document.getElementById('apellido');
 var error = document.getElementById('error')
-error.style.color='red';
 
 function enviarFormulario(){
     console.log('Enviando formulario ...');
@@ -26,9 +25,12 @@ function enviarFormulario(){
     if(celular.value === null || celular.value === ''){
         mensajesError.push('Ingresa tu celular');
     }
+
+    if(consulta.value === null || consulta.value === ''){
+        mensajesError.push('Ingresa tu consulta');
+    }
+
         error.innerHTML = mensajesError.join(', ');
 
     return false;
 }
-
-
